@@ -1,3 +1,4 @@
+creep_controller = require("creep_controller")
 module.exports.loop = function()
     //loops are to make sure things happen every tick. '=' assigns things. 
 {
@@ -10,5 +11,12 @@ for(spawn in Game.spawns)
     spawner = Game.spawns[spawn]
     console.log(spawner)
     spawner.spawnCreep([WORK, CARRY, MOVE], 'bebe'+Game.time);
+}
+for(bebe in Game.creeps)
+{
+    console.log(bebe)
+    console.log(Game.creeps[bebe])
+    creep = Game.creeps[bebe]
+    creep_controller.run(creep)
 }
 }
