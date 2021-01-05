@@ -8,6 +8,7 @@ for(spawn in Game.spawns)
 {
     console.log(spawn)
     //naming is arbitrary, spawn could be "bubbadeebadadoof" (as long as it's the same in both) 
+    //console.log prints things into the console
     spawner = Game.spawns[spawn]
     console.log(spawner)
     spawner.spawnCreep([WORK, CARRY, MOVE], 'bebe'+Game.time);
