@@ -11,7 +11,8 @@ for(spawn in Game.spawns)
     //console.log prints things into the console
     spawner = Game.spawns[spawn]
     console.log(spawner)
-    spawner.spawnCreep([WORK, CARRY, MOVE], 'bebe'+Game.time);
+    if(Object.keys(Game.creeps).length < 9) {
+        spawner.spawnCreep([WORK, CARRY, MOVE], 'bebe'+Game.time);}
 }
 for(bebe in Game.creeps)
 {

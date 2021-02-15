@@ -6,16 +6,18 @@
 			"script": "install",
 			"problemMatcher": [],
 			"label": "npm: install",
-			"detail": "install dependencies from package"
+			"detail": "install dependencies from package",
+			"group": "build"
 		},
-        {
-            "label": "upload",
-            "type": "shell",
-            "command": "npx grunt screeps",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        }
+		{
+			"label": "upload",
+			"type": "shell",
+			"command": "npx grunt screeps",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": []
+		}
 	]
 }
