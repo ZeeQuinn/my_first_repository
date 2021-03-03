@@ -4,6 +4,10 @@ module.exports =
         {
             return [MOVE,CARRY,WORK]
         },
+        getMaxCreeps: function()
+        {
+            return 8
+        },
         run: function(creep)
             {
                 // '=' means assignment, '==' means comparison for equality, '!=' means inequality.

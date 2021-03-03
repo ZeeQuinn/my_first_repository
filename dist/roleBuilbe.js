@@ -4,6 +4,10 @@ module.exports =
         {
             return [MOVE,CARRY,WORK]
         },
+        getMaxCreeps: function()
+        {
+            return 2
+        },
         run: function(creep)
             {
                 if (creep.memory.status == "Delivering")
